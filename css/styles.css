@@ -205,6 +205,8 @@ img {
 .label {
    display: block;
    position: relative;
+
+   width: 100%;
    margin-bottom: 4px;
    color: #8e8f99;
    font-size: 12px;
@@ -235,18 +237,6 @@ img {
    letter-spacing: 0.03em;
 }
 
-.accept-container {
-   position: relative;
-
-   min-width: 360px;
-   margin-top: 16px;
-   margin-bottom: 26px;
-
-   display: inline-flex;
-   justify-content: center;
-   align-items: center;
-}
-
 .check {
    position: absolute;
    visibility: hidden;
@@ -254,12 +244,13 @@ img {
 
 .check-label {
    min-width: 338px;
+   margin-bottom: 24px;
    color: #8e8f99;
    font-size: 12px;
    line-height: 1.17;
    letter-spacing: 0.03em;
 
-   display: inline-flex;
+   display: flex;
    align-items: center;
 }
 
