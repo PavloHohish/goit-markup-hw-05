@@ -90,6 +90,7 @@ img {
    position: fixed;
    top: 0;
    left: 0;
+   z-index: 2;
 
    height: 100%;
    width: 100%;
@@ -616,7 +617,7 @@ img {
    overflow: hidden;
 }
 
-.portfolio-list-item:hover > .portfolio-hover-text {
+.portfolio-list-item:hover .portfolio-hover-text {
    transform: translateY(0%);
 }
 
