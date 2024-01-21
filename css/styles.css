@@ -766,10 +766,6 @@ img {
    gap: 24px;
 }
 
-.subscribe-label {
-   position: absolute;
-}
-
 .input-email {
    width: 264px;
    height: 40px;
@@ -806,7 +802,6 @@ img {
    display: flex;
    justify-content: center;
    align-items: center;
-   gap: 16px;
 
    color: #fff;
    text-align: center;
@@ -821,6 +816,7 @@ img {
 .subscribe-icon {
    height: 24px;
    width: 24px;
+   margin-left: 16px;
    fill: #f4f4fd;
 }
 
