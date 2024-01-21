@@ -20,6 +20,72 @@
       <title>Web Studio</title>
    </head>
    <body>
+      <!-- MODAL WINDOW -->
+      <div class="backdrop is-open">
+         <div class="modal">
+            <!-- CLOSE BTN -->
+            <button class="modal-close-btn" type="button">
+               <svg class="modal-close-icon" height="8" width="8">
+                  <use href="./images/icons.svg#icon-close"></use>
+               </svg>
+            </button>
+
+            <div class="feedback">
+               <form class="form">
+                  <p class="form-text">Leave your contacts and we will call you back</p>
+                  <div class="inputs-container">
+                     <label class="label">
+                        Name
+                        <span class="input-icon">
+                           <svg>
+                              <use href="./images/icons.svg#icon-person" height="24" width="18"></use>
+                           </svg>
+                        </span>
+                        <input class="form-input" type="text" name="username" />
+                     </label>
+                     <label class="label">
+                        Phone
+                        <span class="input-icon">
+                           <svg>
+                              <use href="./images/icons.svg#icon-phone" height="24" width="24"></use>
+                           </svg>
+                        </span>
+                        <input class="form-input" type="tel" name="user-tel" />
+                     </label>
+                     <label class="label">
+                        Email
+                        <span class="input-icon">
+                           <svg>
+                              <use href="./images/icons.svg#icon-email" height="24" width="24"></use>
+                           </svg>
+                        </span>
+                        <input class="form-input" type="email" name="user-email" />
+                     </label>
+                     <label class="label">
+                        Comment
+                        <textarea class="form-input textarea" name="user-comment" placeholder="Text input"></textarea>
+                     </label>
+                  </div>
+
+                  <div class="accept-container">
+                     <input class="check" type="checkbox" name="policy" id="policy" value="true" />
+                     <label class="check-label" for="policy">
+                        <span>
+                           <svg class="check-icon">
+                              <use href="./images/icons.svg#icon-accept" height="16" width="16"></use>
+                           </svg>
+                        </span>
+                        I accept the terms and conditions of the <a class="privacy-policy" href="">Privacy Policy</a>
+                     </label>
+                  </div>
+
+                  <button class="send-btn" type="button">Send</button>
+               </form>
+            </div>
+         </div>
+      </div>
+
+      <!-- HEADER -->
       <header class="header">
          <!-- NAV MENU -->
          <div class="container header-container">
@@ -425,6 +491,24 @@
                      </a>
                   </li>
                </ul>
+            </div>
+
+            <!-- Subscribe -->
+            <div class="subscribe-container">
+               <p class="subscribe">Subscribe</p>
+               <form>
+                  <div class="footer-inputs">
+                     <input class="input-email" type="email" placeholder="E-mail" />
+                     <button class="subscribe-btn">
+                        Subscribe
+                        <span class="subscribe-icon">
+                           <svg>
+                              <use href="./images/icons.svg#icon-send" width="24" height="24"></use>
+                           </svg>
+                        </span>
+                     </button>
+                  </div>
+               </form>
             </div>
          </div>
       </footer>
