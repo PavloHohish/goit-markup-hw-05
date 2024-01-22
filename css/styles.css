@@ -235,7 +235,6 @@ img {
 /* COMMENT BLOCK */
 
 .comment-container {
-   width: 100%;
    margin-bottom: 16px;
 }
 
@@ -273,11 +272,6 @@ img {
 
 .check-container {
    margin-bottom: 24px;
-}
-
-.check {
-   visibility: hidden;
-   position: absolute;
 }
 
 .check-label {
