@@ -454,49 +454,60 @@
             </button>
             <p class="form-text">Leave your contacts and we will call you back</p>
             <form class="form feedback-form">
-               <div class="inputs-container">
+               <div class="all-inputs-container">
                   <label class="label" for="user-name">
                      Name
-                     <span class="input-icon">
-                        <svg>
-                           <use href="./images/icons.svg#icon-person" height="24" width="18"></use>
+                     <div class="input-container">
+                        <input class="form-input" id="user-name" name="user-name" type="text" />
+                        <svg class="input-icon" height="24" width="18">
+                           <use href="./images/icons.svg#icon-person"></use>
                         </svg>
-                     </span>
-                     <input class="form-input" type="text" id="user-name" name="username" />
+                     </div>
                   </label>
                   <label class="label">
                      Phone
-                     <span class="input-icon">
-                        <svg>
-                           <use href="./images/icons.svg#icon-phone" height="24" width="24"></use>
+                     <div class="input-container">
+                        <input class="form-input" type="tel" name="user-tel" />
+                        <svg class="input-icon" height="24" width="18">
+                           <use href="./images/icons.svg#icon-phone"></use>
                         </svg>
-                     </span>
-                     <input class="form-input" type="tel" name="user-tel" />
+                     </div>
                   </label>
                   <label class="label">
                      Email
-                     <span class="input-icon">
-                        <svg>
-                           <use href="./images/icons.svg#icon-email" height="24" width="24"></use>
+                     <div class="input-container">
+                        <input class="form-input" type="email" name="user-email" />
+                        <svg class="input-icon" height="24" width="18">
+                           <use href="./images/icons.svg#icon-email"></use>
                         </svg>
-                     </span>
-                     <input class="form-input" type="email" name="user-email" />
+                     </div>
                   </label>
-                  <label class="label">
-                     Comment
-                     <textarea class="form-input textarea" name="user-comment" placeholder="Text input"></textarea>
-                  </label>
+                  <div class="comment-container">
+                     <label class="label" for="user-comment">
+                        Comment
+                        <div class="input-container">
+                           <textarea
+                              class="textarea"
+                              id="user-comment"
+                              name="user-comment"
+                              placeholder="Text input"
+                           ></textarea>
+                        </div>
+                     </label>
+                  </div>
+                  <div class="check-container">
+                     <input class="check" type="checkbox" id="user-privacy" name="user-privacy" value="true" />
+                     <label class="check-label" for="user-privacy">
+                        <span class="check-icon">
+                           <svg class="check-icon-svg" height="8" width="10">
+                              <use href="./images/icons.svg#icon-accept"></use>
+                           </svg>
+                        </span>
+                        I accept the terms and conditions of the <a class="privacy-policy" href="">Privacy Policy</a>
+                     </label>
+                  </div>
+                  <button class="send-btn" type="button">Send</button>
                </div>
-               <label class="check-label" for="policy">
-                  <input class="check" type="checkbox" name="policy" id="policy" value="true" />
-                  <span>
-                     <svg class="check-icon">
-                        <use href="./images/icons.svg#icon-accept" height="16" width="16"></use>
-                     </svg>
-                  </span>
-                  I accept the terms and conditions of the <a class="privacy-policy" href="">Privacy Policy</a>
-               </label>
-               <button class="send-btn" type="button">Send</button>
             </form>
          </div>
       </div>
